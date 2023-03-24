@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteRule ^api/v1/games$ api.php [L,QSA]
+RewriteRule ^api/v1/games/(\d+)$ api.php?id=$1 [L,QSA]
